@@ -26,7 +26,7 @@ const Welcome = () => {
         gap="10px"
       >
         {/* DESCRIPTION */}
-        <Box gridColumn="span 4">Test</Box>
+        <Box gridColumn="span 4"></Box>
         <Box
           gridColumn="span 4"
           gridRow="span 2"
@@ -35,7 +35,7 @@ const Welcome = () => {
           justifyContent="center"
         >
           <Typography fontSize="50px" fontWeight="600">
-            Don't wait. Start looking!asdasd
+            Don't wait. Start looking!
           </Typography>
         </Box>
 
@@ -159,17 +159,69 @@ const Welcome = () => {
       {/* IMAGE SLIDER */}
       <Box
         gridColumn="span 6"
-        gridRow="span 3"
+        gridRow="span 4"
         display="grid"
         gridTemplateColumns="repeat(6, 1fr)"
         gridAutoRows="60px"
         gap="10px"
       >
-        <Box gridColumn="span 1" gridRow="span 6"></Box>
-        <Box gridColumn="span 4" gridRow="span 6"></Box>
-        <Box gridColumn="span 1" gridRow="span 6"></Box>
+        <Box gridColumn="span 1" gridRow="span 8"></Box>
+        <Box
+          gridColumn="span 4"
+          display="grid"
+          gridTemplateColumns="repeat(1, 1fr)"
+          gridAutoRows="80px"
+          gap="10px"
+        >
+          <Box
+            gridColumn="span 1"
+            gridRow="span 5"
+            sx={{
+              borderRadius: "10px",
+              backgroundColor: colors.gray[100],
+            }}
+          ></Box>
+          <Box
+            gridColumn="span 1"
+            gridRow="span 1"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Box
+              sx={{
+                backgroundColor: colors.primary[100],
+                borderRadius: "50%",
+                width: "15px",
+                height: "15px",
+                m: "0 5px 0 5px"
+              }}
+            />
+            <Box
+              sx={{
+                backgroundColor: colors.primary[100],
+                borderRadius: "50%",
+                width: "15px",
+                height: "15px",
+                m: "0 5px 0 5px"
+              }}
+            />
+            <Box
+              sx={{
+                backgroundColor: colors.primary[100],
+                borderRadius: "50%",
+                width: "15px",
+                height: "15px",
+                m: "0 5px 0 5px"
+              }}
+            />
+          </Box>
+        </Box>
+        <Box gridColumn="span 1" gridRow="span 8"></Box>
       </Box>
-      <Box gridColumn="span 12"></Box>
+      <Box gridColumn="span 6"></Box>
     </Box>
   );
 };
