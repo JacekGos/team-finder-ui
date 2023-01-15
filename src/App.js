@@ -4,6 +4,7 @@ import { ThemeProvider, CssBaseline, Typography, Box } from "@mui/material";
 import Topbar from './pages/global/Topbar';
 import { tokens } from "./theme";
 import Welcome from './pages/welcome/Welcome'
+import SignIn from "./pages/sign-in/SignIn";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -18,6 +19,7 @@ function App() {
               <Topbar />
               <Routes>
                 <Route path="/" element={<Welcome />}/>
+                <Route path="/login" element={<SignIn />}/>
               </Routes>
             </main>
 
