@@ -33,7 +33,7 @@ const ImageSlider = () => {
           >
             <img
               className="welcome-img"
-              src="../../../images/welcome-img-1.jpg"
+              src="../../../images/welcome-img-3.jpg"
               alt="welcome-page"
             />
           </Box>
