@@ -55,7 +55,7 @@ const Topbar = () => {
             fontWeight: "600",
           }}
         >
-          team-finder.com
+          TeamFinder.com
         </Typography>
         <Switch onChange={handleMode} />
         {theme.palette.mode === "dark" ? (

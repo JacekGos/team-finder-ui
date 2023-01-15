@@ -2,6 +2,11 @@ import { tokens } from "../../theme";
 import { Box, Typography, useTheme } from "@mui/material";
 import Button from "@mui/material/Button";
 import SportsSoccerOutlinedIcon from "@mui/icons-material/SportsSoccerOutlined";
+import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
+import SportsVolleyballOutlinedIcon from '@mui/icons-material/SportsVolleyballOutlined';
+import SportsBasketballOutlinedIcon from '@mui/icons-material/SportsBasketballOutlined';
+import DirectionsRunOutlinedIcon from '@mui/icons-material/DirectionsRunOutlined';
+import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
 
 const Description = () => {
   const theme = useTheme();
@@ -47,6 +52,7 @@ const Description = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              m: "0 5px 0 5px"
             }}
           >
             <Typography variant="h3" mr="5px">
@@ -66,12 +72,13 @@ const Description = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              m: "0 5px 0 5px"
             }}
           >
             <Typography variant="h3" mr="5px">
-              Football
+              Volleyball
             </Typography>
-            <SportsSoccerOutlinedIcon
+            <SportsVolleyballOutlinedIcon
               sx={{
                 fontSize: "30px",
               }}
@@ -85,12 +92,13 @@ const Description = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              m: "0 5px 0 5px"
             }}
           >
             <Typography variant="h3" mr="5px">
-              Football
+              Basketball
             </Typography>
-            <SportsSoccerOutlinedIcon
+            <SportsBasketballOutlinedIcon
               sx={{
                 fontSize: "30px",
               }}
@@ -114,12 +122,13 @@ const Description = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              m: "0 5px 0 5px"
             }}
           >
             <Typography variant="h3" mr="5px">
-              Football
+              Jogging
             </Typography>
-            <SportsSoccerOutlinedIcon
+            <DirectionsRunOutlinedIcon
               sx={{
                 fontSize: "30px",
               }}
@@ -133,12 +142,13 @@ const Description = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              m: "0 5px 0 5px"
             }}
           >
             <Typography variant="h3" mr="5px">
-              Football
+              More...
             </Typography>
-            <SportsSoccerOutlinedIcon
+            <GroupsOutlinedIcon
               sx={{
                 fontSize: "30px",
               }}
@@ -156,12 +166,15 @@ const Description = () => {
           <Button
             variant="contained"
             sx={{
-              fontSize: "20px",
+              fontSize: "24px",
               mr: "10px",
-              width: "150px"
+              width: "150px",
             }}
           >
             START
+            <ArrowForwardIosOutlinedIcon sx={{
+               ml: "15px"
+            }} />
           </Button>
         </Box>
       </Box>
