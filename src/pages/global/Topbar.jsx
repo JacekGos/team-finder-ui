@@ -24,7 +24,7 @@ const Topbar = () => {
         alignItems: "center",
         p: "20px",
         backgroundColor: colors.primary[800],
-        borderBottom: `1px solid ${colors.primary[700]}`,
+        borderBottom: `1px solid ${colors.primary[600]}`,
       }}
     >
       {/* LOGO */}
