@@ -50,12 +50,11 @@ const SignIn = () => {
             sx={{
                 display: "flex",
                 justifyContent: "center",
-                mt: "20px"
+                mt: "20px",
             }}>
             <Groups2OutlinedIcon
               sx={{
                 fontSize: "40px",
-                // mr: "6px",
               }}
             />
           </Box>

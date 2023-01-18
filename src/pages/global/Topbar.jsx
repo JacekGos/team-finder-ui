@@ -1,6 +1,7 @@
 import { Box, Typography, useTheme, IconButton } from "@mui/material";
 import Button from "@mui/material/Button";
 import Switch from "@mui/material/Switch";
+import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ColorModeContext, tokens } from "../../theme";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
@@ -35,19 +36,21 @@ const Topbar = () => {
           alignItems: "center",
         }}
       >
-        <IconButton
-          sx={{
-            type: "button",
-            p: "5px",
-          }}
-        >
-          <Groups2OutlinedIcon
+        <Link to="/">
+          <IconButton
             sx={{
-              fontSize: "40px",
-              // mr: "6px",
+              type: "button",
+              p: "5px",
             }}
-          />
-        </IconButton>
+          >
+            <Groups2OutlinedIcon
+              sx={{
+                fontSize: "40px",
+                // mr: "6px",
+              }}
+            />
+          </IconButton>
+        </Link>
         <Typography
           variant="h2"
           sx={{
@@ -67,15 +70,17 @@ const Topbar = () => {
 
       {/* BUTTONS */}
       <Box>
-        <Button
-          variant="outlined"
-          sx={{
-            fontSize: "16px",
-            mr: "10px",
-          }}
-        >
-          Sign In
-        </Button>
+        <Link to="/login">
+          <Button
+            variant="outlined"
+            sx={{
+              fontSize: "16px",
+              mr: "10px",
+            }}
+          >
+            Sign In
+          </Button>
+        </Link>
         <Button
           variant="contained"
           sx={{
