@@ -4,6 +4,8 @@ import Button from "@mui/material/Button";
 import { Formik } from "formik";
 import * as yup from "yup";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import Groups2OutlinedIcon from "@mui/icons-material/Groups2Outlined";
+
 
 const SignIn = () => {
   const theme = useTheme();
@@ -14,9 +16,6 @@ const SignIn = () => {
   };
 
   const isNonMobile = useMediaQuery("(min-width:600px)");
-
-  const phoneRegExp =
-    /^((\+[1-9]{1,4}[ -]?)|(\([0-9]{2,3}\)[ -]?)|([0-9]{2,4})[ -]?)*?[0-9]{3,4}[ -]?[0-9]{3,4}$/;
 
   const checkoutSchema = yup.object().shape({
     username: yup.string().required("required"),
@@ -38,17 +37,31 @@ const SignIn = () => {
       >
         <Box
           sx={{
-            height: "30vh",
+            height: "35vh",
             border: `2px solid ${colors.primary[700]}`,
             borderRadius: "10px",
             mt: "100px",
             width: "30vh",
             backgroundColor: `${colors.primary[900]}`,
+            // justifyContent: "center"
           }}
         >
           <Box
             sx={{
-              m: "50px 50px",
+                display: "flex",
+                justifyContent: "center",
+                mt: "20px"
+            }}>
+            <Groups2OutlinedIcon
+              sx={{
+                fontSize: "40px",
+                // mr: "6px",
+              }}
+            />
+          </Box>
+          <Box
+            sx={{
+              m: "20px 50px 50px 50px",
             }}
           >
             <Formik
@@ -85,7 +98,7 @@ const SignIn = () => {
                       value={values.username}
                       name="username"
                       error={!!touched.username && !!errors.username}
-                      helperText={touched.username && errors.username}
+                      // helperText={touched.username && errors.username}
                       size="normal"
                       sx={{ gridColumn: "span 4" }}
                     />
@@ -99,11 +112,11 @@ const SignIn = () => {
                       value={values.password}
                       name="password"
                       error={!!touched.password && !!errors.password}
-                      helperText={touched.password && errors.password}
+                      // helperText={touched.password && errors.password}
                       sx={{ gridColumn: "span 4" }}
                     />
                   </Box>
-                  <Box display="flex" justifyContent="center" mt="20px">
+                  <Box display="flex" justifyContent="center" mt="20px" position="fixed">
                     <Button
                       variant="contained"
                       sx={{
@@ -136,7 +149,7 @@ const SignIn = () => {
           <Typography sx={{
             fontSize: "13px"
           }}>
-            New? Create account on TeamFinder
+            New? Create account
           </Typography>
         </Box>
       </Box>
