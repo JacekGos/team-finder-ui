@@ -1,9 +1,4 @@
-import {
-  Box,
-  Typography,
-  useTheme,
-  TextField,
-} from "@mui/material";
+import { Box, Typography, useTheme, TextField } from "@mui/material";
 import { tokens } from "../../theme";
 import Button from "@mui/material/Button";
 import { Formik } from "formik";
@@ -24,13 +19,13 @@ const SignUp = () => {
 
   const checkoutSchema = yup.object().shape({
     username: yup.string().required("required"),
+    email: yup.string().email("invalid email").required("required"),
     password: yup.string().required("required"),
   });
   const initialValues = {
     email: "",
     username: "",
     password: "",
-    repeatPassword: "",
   };
 
   return (
@@ -44,7 +39,7 @@ const SignUp = () => {
       >
         <Box
           sx={{
-            height: "35vh",
+            height: "43vh",
             border: `2px solid ${colors.primary[700]}`,
             borderRadius: "10px",
             mt: "100px",
@@ -99,12 +94,26 @@ const SignUp = () => {
                       fullWidth
                       variant="outlined"
                       type="text"
-                      label="Username or email"
+                      label="username"
                       onBlur={handleBlur}
                       onChange={handleChange}
                       value={values.username}
                       name="username"
                       error={!!touched.username && !!errors.username}
+                      // helperText={touched.username && errors.username}
+                      size="normal"
+                      sx={{ gridColumn: "span 4" }}
+                    />
+                    <TextField
+                      fullWidth
+                      variant="outlined"
+                      type="text"
+                      label="email"
+                      onBlur={handleBlur}
+                      onChange={handleChange}
+                      value={values.email}
+                      name="email"
+                      error={!!touched.email && !!errors.email}
                       // helperText={touched.username && errors.username}
                       size="normal"
                       sx={{ gridColumn: "span 4" }}
@@ -123,73 +132,22 @@ const SignUp = () => {
                       sx={{ gridColumn: "span 4" }}
                     />
                   </Box>
-                  <Box
-                    display="flex"
-                    justifyContent="center"
-                    mt="20px"
-                    position="fixed"
-                  >
+                  <Box display="flex" justifyContent="center" mt="20px">
                     <Button
+                      type="submit"
                       variant="contained"
                       sx={{
                         fontSize: "15px",
                         width: "20vh",
                       }}
                     >
-                      Sign In
+                      Sign Up
                     </Button>
                   </Box>
                 </form>
               )}
             </Formik>
           </Box>
-        </Box>
-
-        <Box
-          sx={{
-            height: "10vh",
-            border: `2px solid ${colors.primary[700]}`,
-            borderRadius: "10px",
-            mt: "20px",
-            width: "30vh",
-            backgroundColor: `${colors.primary[900]}`,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          {/* <Box sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center"
-          }}> */}
-          <Typography
-            sx={{
-              fontSize: "13px",
-            }}
-          >
-            New?
-          </Typography>
-
-          <Link to="/">
-            <Typography
-              sx={{
-                cursor: "pointer",
-                fontSize: "13px",
-                ml: "5px",
-                color: colors.secondary[600],
-                fontWeight: "bold",
-                transition: "font-size 0.5s",
-                "&:hover": {
-                  fontSize: "15px",
-                  textDecoration: "underline",
-                },
-              }}
-            >
-              Create an account
-            </Typography>
-          </Link>
-          {/* </Box> */}
         </Box>
       </Box>
     </>

@@ -1,9 +1,4 @@
-import {
-  Box,
-  Typography,
-  useTheme,
-  TextField,
-} from "@mui/material";
+import { Box, Typography, useTheme, TextField } from "@mui/material";
 import { tokens } from "../../theme";
 import Button from "@mui/material/Button";
 import { Formik } from "formik";
@@ -125,9 +120,10 @@ const SignIn = () => {
                     display="flex"
                     justifyContent="center"
                     mt="20px"
-                    position="fixed"
+                    // position="fixed"
                   >
                     <Button
+                      type="submit"
                       variant="contained"
                       sx={{
                         fontSize: "15px",
@@ -156,11 +152,6 @@ const SignIn = () => {
             justifyContent: "center",
           }}
         >
-          {/* <Box sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center"
-          }}> */}
           <Typography
             sx={{
               fontSize: "13px",
@@ -169,7 +160,7 @@ const SignIn = () => {
             New?
           </Typography>
 
-          <Link to="/">
+          <Link to="/signup">
             <Typography
               sx={{
                 cursor: "pointer",
