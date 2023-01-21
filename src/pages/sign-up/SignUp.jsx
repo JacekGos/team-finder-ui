@@ -39,7 +39,7 @@ const SignUp = () => {
       >
         <Box
           sx={{
-            height: "43vh",
+            // height: "43vh",
             border: `2px solid ${colors.primary[700]}`,
             borderRadius: "10px",
             mt: "100px",

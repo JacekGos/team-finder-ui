@@ -37,7 +37,8 @@ const SignIn = () => {
       >
         <Box
           sx={{
-            height: "35vh",
+            // height: "35vh",
+            // height: {sx: ""},
             border: `2px solid ${colors.primary[700]}`,
             borderRadius: "10px",
             mt: "100px",
