@@ -3,10 +3,10 @@ import { Box, Typography, useTheme } from "@mui/material";
 import Button from "@mui/material/Button";
 import SportsSoccerOutlinedIcon from "@mui/icons-material/SportsSoccerOutlined";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
-import SportsVolleyballOutlinedIcon from '@mui/icons-material/SportsVolleyballOutlined';
-import SportsBasketballOutlinedIcon from '@mui/icons-material/SportsBasketballOutlined';
-import DirectionsRunOutlinedIcon from '@mui/icons-material/DirectionsRunOutlined';
-import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
+import SportsVolleyballOutlinedIcon from "@mui/icons-material/SportsVolleyballOutlined";
+import SportsBasketballOutlinedIcon from "@mui/icons-material/SportsBasketballOutlined";
+import DirectionsRunOutlinedIcon from "@mui/icons-material/DirectionsRunOutlined";
+import GroupsOutlinedIcon from "@mui/icons-material/GroupsOutlined";
 
 const Description = () => {
   const theme = useTheme();
@@ -23,7 +23,6 @@ const Description = () => {
         gap="10px"
       >
         {/* DESCRIPTION */}
-        <Box gridColumn="span 4"></Box>
         <Box
           gridColumn="span 4"
           gridRow="span 2"
@@ -31,7 +30,18 @@ const Description = () => {
           alignItems="center"
           justifyContent="center"
         >
-          <Typography fontSize="50px" fontWeight="600">
+          <Typography
+            sx={{
+              fontSize: {
+                xs: "25px",
+                sm: "35px",
+                md: "42px",
+                lg: "47px",
+                xl: "50px",
+              },
+              fontWeight: "600",
+            }}
+          >
             Don't wait. Start looking!
           </Typography>
         </Box>
@@ -52,7 +62,7 @@ const Description = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              m: "0 5px 0 5px"
+              m: "0 5px 0 5px",
             }}
           >
             <Typography variant="h3" mr="5px">
@@ -60,7 +70,13 @@ const Description = () => {
             </Typography>
             <SportsSoccerOutlinedIcon
               sx={{
-                fontSize: "30px",
+                fontSize: {
+                  xs: "12px",
+                  sm: "15px",
+                  md: "20px",
+                  lg: "25px",
+                  xl: "30px",
+                },
               }}
             />
           </Box>
@@ -72,7 +88,7 @@ const Description = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              m: "0 5px 0 5px"
+              m: "0 5px 0 5px",
             }}
           >
             <Typography variant="h3" mr="5px">
@@ -80,7 +96,13 @@ const Description = () => {
             </Typography>
             <SportsVolleyballOutlinedIcon
               sx={{
-                fontSize: "30px",
+                fontSize: {
+                  xs: "12px",
+                  sm: "15px",
+                  md: "20px",
+                  lg: "25px",
+                  xl: "30px",
+                },
               }}
             />
           </Box>
@@ -92,7 +114,7 @@ const Description = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              m: "0 5px 0 5px"
+              m: "0 5px 0 5px",
             }}
           >
             <Typography variant="h3" mr="5px">
@@ -100,7 +122,13 @@ const Description = () => {
             </Typography>
             <SportsBasketballOutlinedIcon
               sx={{
-                fontSize: "30px",
+                fontSize: {
+                  xs: "12px",
+                  sm: "15px",
+                  md: "20px",
+                  lg: "25px",
+                  xl: "30px",
+                },
               }}
             />
           </Box>
@@ -122,7 +150,7 @@ const Description = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              m: "0 5px 0 5px"
+              m: "0 5px 0 5px",
             }}
           >
             <Typography variant="h3" mr="5px">
@@ -130,7 +158,13 @@ const Description = () => {
             </Typography>
             <DirectionsRunOutlinedIcon
               sx={{
-                fontSize: "30px",
+                fontSize: {
+                  xs: "12px",
+                  sm: "15px",
+                  md: "20px",
+                  lg: "25px",
+                  xl: "30px",
+                },
               }}
             />
           </Box>
@@ -142,7 +176,7 @@ const Description = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              m: "0 5px 0 5px"
+              m: "0 5px 0 5px",
             }}
           >
             <Typography variant="h3" mr="5px">
@@ -150,7 +184,13 @@ const Description = () => {
             </Typography>
             <GroupsOutlinedIcon
               sx={{
-                fontSize: "30px",
+                fontSize: {
+                  xs: "12px",
+                  sm: "15px",
+                  md: "20px",
+                  lg: "25px",
+                  xl: "30px",
+                },
               }}
             />
           </Box>
@@ -166,15 +206,29 @@ const Description = () => {
           <Button
             variant="contained"
             sx={{
-              fontSize: "24px",
+              fontSize: {
+                xs: "10px",
+                sm: "12px",
+                md: "17px",
+                lg: "20px",
+                xl: "24px",
+              },
               mr: "10px",
-              width: "150px",
+              width: {
+                xs: "80px",
+                sm: "100px",
+                md: "120px",
+                lg: "130px",
+                xl: "150px",
+              },
             }}
           >
             START
-            <ArrowForwardIosOutlinedIcon sx={{
-               ml: "15px"
-            }} />
+            <ArrowForwardIosOutlinedIcon
+              sx={{
+                ml: "15px",
+              }}
+            />
           </Button>
         </Box>
       </Box>

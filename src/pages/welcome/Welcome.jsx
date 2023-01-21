@@ -10,13 +10,20 @@ const Welcome = () => {
 
   return (
     <Box
-      display="grid"
-      gridTemplateColumns="repeat(12, 1fr)"
-      gridAutoRows="120px"
-      gap="20px"
+      sx={{
+        display: "grid",
+        gap: "20px",
+        gridAutoRows: "120px",
+        gridTemplateColumns: {lg: "repeat(6, 1fr)", xl: "repeat(12, 1fr)"}
+      }}
     >
       {/* ROW 1 */}
-      <Box gridColumn="span 12"></Box>
+      <Box 
+        sx={{
+          gridColumn: {lg: "span 6", xl: "span 12"},
+        }}
+
+      ></Box>
 
       {/* ROW2 */}
       <Description />

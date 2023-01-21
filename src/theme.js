@@ -1,29 +1,20 @@
 import { createContext, useState, useMemo } from "react";
 import { createTheme } from "@mui/material/styles";
 
+
 export const tokens = (mode) => ({
   ...(mode === "dark"
     ? {
         primary: {
-          // 100: "#d9edfd",
-          // 200: "#b3dbfb",
-          // 300: "#8ec9f9",
-          // 400: "#68b7f7",
-          // 500: "#42a5f5",
-          // 600: "#3584c4",
-          // 700: "#286393",
-          // 800: "#1a4262",
-          // 900: "#0d2131",
-          50: "#f4f7fb",
-          100: "#e8edf6",
-          200: "#ccdaeb",
-          300: "#9ebcdb",
-          400: "#598dbf",
-          500: "#477cb0",
-          600: "#366293",
-          700: "#2c4f78",
-          800: "#284464",
-          900: "#263b54",
+          100: "#d9edfd",
+          200: "#b3dbfb",
+          300: "#8ec9f9",
+          400: "#68b7f7",
+          500: "#42a5f5",
+          600: "#3584c4",
+          700: "#286393",
+          800: "#1a4262",
+          900: "#0d2131",
         },
         secondary: {
           100: "#fcdddc",
@@ -34,7 +25,7 @@ export const tokens = (mode) => ({
           600: "#bf4240",
           700: "#8f3230",
           800: "#602120",
-          900: "#301110",
+          900: "#301110"
         },
         gray: {
           100: "#fdfdfd",
@@ -46,20 +37,20 @@ export const tokens = (mode) => ({
           700: "#939393",
           800: "#626262",
           900: "#313131",
-        },
+        }
+       
       }
     : {
         primary: {
-          50: "#263b54",
-          100: "#284464",
-          200: "#2c4f78",
-          300: "#366293",
-          400: "#477cb0",
-          500: "#598dbf",
-          600: "#9ebcdb",
-          700: "#ccdaeb",
-          800: "#e8edf6",
-          900: "#f4f7fb",
+          100: "#0d2131",
+          200: "#1a4262",
+          300: "#286393",
+          400: "#3584c4",
+          500: "#42a5f5",
+          600: "#68b7f7",
+          700: "#8ec9f9",
+          800: "#b3dbfb",
+          900: "#d9edfd",
         },
         secondary: {
           100: "#301110",
@@ -70,7 +61,7 @@ export const tokens = (mode) => ({
           600: "#f27573",
           700: "#f59896",
           800: "#f9bab9",
-          900: "#fcdddc",
+          900: "#fcdddc"
         },
         gray: {
           100: "#313131",
@@ -82,7 +73,7 @@ export const tokens = (mode) => ({
           700: "#f9f9f9",
           800: "#fbfbfb",
           900: "#fdfdfd",
-        },
+        }
       }),
 });
 
@@ -141,6 +132,15 @@ export const themeSettings = (mode) => {
       h3: {
         fontFamily: ["Raleway", "sans-serif"].join(","),
         fontSize: 22,
+        '@media (max-width:600px)': {
+          fontSize: 12,
+        },
+        '@media (min-width:600px) and (max-width:900px)': {
+          fontSize: 16,
+        },
+        '@media (min-width:900px) and (max-width:1200px)': {
+          fontSize: 20,
+        },
       },
       h4: {
         fontFamily: ["Raleway", "sans-serif"].join(","),
