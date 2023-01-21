@@ -2,7 +2,7 @@
   "name": "team-finder",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://{JacekGos}.github.io/{team-finder-ui}",
+  "homepage": "https://JacekGos.github.io/team-finder-ui",
   "dependencies": {
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.4",
