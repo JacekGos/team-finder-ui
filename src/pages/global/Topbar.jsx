@@ -45,7 +45,8 @@ const Topbar = () => {
           >
             <Groups2OutlinedIcon
               sx={{
-                fontSize: "40px",
+                // fontSize: "40px",
+                fontSize: { xs: "30px", sm: "40px" },
                 // mr: "6px",
               }}
             />
