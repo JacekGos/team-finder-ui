@@ -1,11 +1,17 @@
-import { Box, Typography, useTheme, TextField } from "@mui/material";
+import {
+  Box,
+  Typography,
+  useTheme,
+  TextField,
+  IconButton,
+} from "@mui/material";
 import { tokens } from "../../theme";
 import Button from "@mui/material/Button";
 import { Formik } from "formik";
 import * as yup from "yup";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Groups2OutlinedIcon from "@mui/icons-material/Groups2Outlined";
-
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   const theme = useTheme();
@@ -48,10 +54,11 @@ const SignIn = () => {
         >
           <Box
             sx={{
-                display: "flex",
-                justifyContent: "center",
-                mt: "20px",
-            }}>
+              display: "flex",
+              justifyContent: "center",
+              mt: "20px",
+            }}
+          >
             <Groups2OutlinedIcon
               sx={{
                 fontSize: "40px",
@@ -115,7 +122,12 @@ const SignIn = () => {
                       sx={{ gridColumn: "span 4" }}
                     />
                   </Box>
-                  <Box display="flex" justifyContent="center" mt="20px" position="fixed">
+                  <Box
+                    display="flex"
+                    justifyContent="center"
+                    mt="20px"
+                    position="fixed"
+                  >
                     <Button
                       variant="contained"
                       sx={{
@@ -142,14 +154,41 @@ const SignIn = () => {
             backgroundColor: `${colors.primary[900]}`,
             display: "flex",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
           }}
         >
-          <Typography sx={{
-            fontSize: "13px"
-          }}>
-            New? Create account
+          {/* <Box sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
+          }}> */}
+          <Typography
+            sx={{
+              fontSize: "13px",
+            }}
+          >
+            New?
           </Typography>
+
+          <Link to="/">
+            <Typography
+              sx={{
+                cursor: "pointer",
+                fontSize: "13px",
+                ml: "5px",
+                color: colors.secondary[600],
+                fontWeight: "bold",
+                transition: "font-size 0.5s",
+                "&:hover": {
+                  fontSize: "15px",
+                  textDecoration: "underline",
+                },
+              }}
+            >
+              Create an account
+            </Typography>
+          </Link>
+          {/* </Box> */}
         </Box>
       </Box>
     </>

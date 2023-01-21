@@ -47,6 +47,9 @@ export const tokens = (mode) => ({
           800: "#626262",
           900: "#313131",
         },
+        links: {
+          100: "#EFF1FE"
+        }
       }
     : {
         primary: {
@@ -92,6 +95,9 @@ export const tokens = (mode) => ({
           800: "#fbfbfb",
           900: "#fdfdfd",
         },
+        links: {
+          100: "#1331F7"
+        }
       }),
 });
 
