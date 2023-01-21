@@ -5,6 +5,7 @@ import Topbar from './pages/global/Topbar';
 import { tokens } from "./theme";
 import Welcome from './pages/welcome/Welcome'
 import SignIn from "./pages/sign-in/SignIn";
+import SignUp from "./pages/sign-up/SignUp";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -20,6 +21,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Welcome />}/>
                 <Route path="/login" element={<SignIn />}/>
+                <Route path="/signup" element={<SignUp />}/>
               </Routes>
             </main>
 

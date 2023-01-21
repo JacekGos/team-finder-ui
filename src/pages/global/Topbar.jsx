@@ -81,14 +81,16 @@ const Topbar = () => {
             Sign In
           </Button>
         </Link>
-        <Button
-          variant="contained"
-          sx={{
-            fontSize: "16px",
-          }}
-        >
-          Sign Up
-        </Button>
+        <Link to="/signup">
+          <Button
+            variant="contained"
+            sx={{
+              fontSize: "16px",
+            }}
+          >
+            Sign Up
+          </Button>
+        </Link>
       </Box>
     </Box>
   );

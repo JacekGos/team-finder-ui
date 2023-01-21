@@ -12,7 +12,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import Groups2OutlinedIcon from "@mui/icons-material/Groups2Outlined";
 import { Link } from "react-router-dom";
 
-const SignIn = () => {
+const SignUp = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -27,8 +27,10 @@ const SignIn = () => {
     password: yup.string().required("required"),
   });
   const initialValues = {
+    email: "",
     username: "",
     password: "",
+    repeatPassword: "",
   };
 
   return (
@@ -194,4 +196,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default SignUp;
