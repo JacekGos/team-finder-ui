@@ -56,6 +56,7 @@ const Topbar = () => {
           sx={{
             mr: "10px",
             fontWeight: "600",
+            display: { xs: "none", sm: "inline" },
           }}
         >
           TeamFinder.com
@@ -74,7 +75,7 @@ const Topbar = () => {
           <Button
             variant="outlined"
             sx={{
-              fontSize: "16px",
+              fontSize: { sx: "13px", sm: "14px", md: "16px" },
               mr: "10px",
             }}
           >
@@ -85,7 +86,7 @@ const Topbar = () => {
           <Button
             variant="contained"
             sx={{
-              fontSize: "16px",
+              fontSize: { sx: "13px", sm: "14px", md: "16px" },
             }}
           >
             Sign Up
