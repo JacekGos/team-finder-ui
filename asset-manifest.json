@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/%7Bteam-finder-ui%7D/static/css/main.9f1b3bf6.css",
+    "main.js": "/%7Bteam-finder-ui%7D/static/js/main.d0d1072e.js",
+    "index.html": "/%7Bteam-finder-ui%7D/index.html",
+    "main.9f1b3bf6.css.map": "/%7Bteam-finder-ui%7D/static/css/main.9f1b3bf6.css.map",
+    "main.d0d1072e.js.map": "/%7Bteam-finder-ui%7D/static/js/main.d0d1072e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f1b3bf6.css",
+    "static/js/main.d0d1072e.js"
+  ]
+}
