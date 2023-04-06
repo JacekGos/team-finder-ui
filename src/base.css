@@ -5,6 +5,10 @@ html, body {
   height: 100%;
 }
 
+.container {
+  max-width: 98% !important;
+}
+
 .navbar {
   background-color: #0A1929;
   border-bottom: solid 1px #103861;
@@ -17,7 +21,7 @@ html, body {
 
 .nav-link {
   color: azure !important;
-  font-size: 22px !important;
+  font-size: 18px !important;
 }
 
 .brand-title {
@@ -35,6 +39,10 @@ html, body {
 
 .navbar-toggler:focus {
   box-shadow: 0 0 0 0.1rem #103861 !important;
+}
+
+.form-check-input {
+  
 }
 
 

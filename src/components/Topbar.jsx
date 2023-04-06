@@ -8,7 +8,7 @@ export default function Topbar() {
         <Navbar collapseOnSelect expand="lg" variant="dark">
             <Container>
                 <Navbar.Brand className="mb-0" href="/">
-                    <p className="brand-title">Team-finder.pl</p>
+                    <p className="brand-title">Team-Finder.pl</p>
                 </Navbar.Brand>
                 <Nav className="me-auto">
                     <Form>
@@ -29,7 +29,6 @@ export default function Topbar() {
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-
                             <Nav.Link eventKey={2} href="#option" >
                                 <Button className="btn-topbar-signin">
                                     Zaloguj
