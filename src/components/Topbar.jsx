@@ -30,9 +30,12 @@ export default function Topbar() {
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey={2} href="#option" >
+                                {/* <Button className="btn-topbar-signin" style={{ borderRadius: 30, fontSize: 17, backgroundColor: 'aliceblue', color: '#0A1929', border: '1px solid #082038'}}> */}
                                 <Button className="btn-topbar-signin">
                                     Zaloguj
                                 </Button>
+
+
                             </Nav.Link>
                         </Nav.Item>
                     </Nav>
