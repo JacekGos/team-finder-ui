@@ -6,9 +6,9 @@ function App() {
   return (
     <>
       <Topbar />
-      <div style={{marginTop: 70}}>
+      <Container fluid style={{marginTop: 70}}>
         <Filterbar />
-      </div>
+      </Container>
     </>
   );
 }
