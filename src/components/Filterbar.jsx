@@ -12,7 +12,7 @@ export default function Filterbar() {
 
     return (
         <Container fluid>
-            <Row className="d-none d-lg-flex" style={{height: 70}}>
+            <Row className="d-none d-lg-flex" style={{height: 90}}>
                 <Col xs={2} sm={2} md={4} className="d-flex align-items-center justify-content-start ps-0" >
                     <Form>
                         <Form.Group>
@@ -20,17 +20,27 @@ export default function Filterbar() {
                         </Form.Group>
                     </Form>
                 </Col>
-                <Col xs={3} sm={5} md={5} className="d-flex align-items-center justify-content-between" style={{color: "white"}}>
-                    <h1><BiFootball className="d-none d-lg-inline" /></h1>
-                    <h1><FaVolleyballBall className="d-none d-lg-inline" /></h1>
-                    <h1><FaBasketballBall className="d-none d-lg-inline" /></h1>
-                    <h1><BiTennisBall className="d-none d-lg-inline" /></h1>
-                    <h1><IoIosBicycle className="d-none d-lg-inline" /></h1>
+                <Col xs={3} sm={5} md={4} className="d-flex align-items-center justify-content-between">
+                    <Button className="input-base rounded-circle" >
+                        <h2><BiFootball style={{color: "white"}} /></h2>
+                    </Button>
+                    <Button className="input-base rounded-circle" >
+                        <h2><FaVolleyballBall style={{color: "white"}}/></h2>
+                    </Button>
+                    <Button className="input-base rounded-circle" >
+                        <h2><FaBasketballBall style={{color: "white"}}/></h2>
+                    </Button>
+                    <Button className="input-base rounded-circle" >
+                        <h2><BiTennisBall style={{color: "white"}}/></h2>
+                    </Button>
+                    <Button className="input-base rounded-circle" >
+                        <h2><IoIosBicycle style={{color: "white"}}/></h2>
+                    </Button>
                     <Button className="input-base text-nowrap d-flex d-lg-none">
                         Dyscyplina
                     </Button>
                 </Col>
-                <Col xs={7} sm={5} md={3} className="d-flex align-items-center justify-content-end">
+                <Col xs={7} sm={5} md={4} className="d-flex align-items-center justify-content-end">
                     <Button className="input-base text-nowrap d-flex align-items-center" >
                         <BsSliders2 className="me-1 d-none d-lg-flex" />
                         Więcej filtrów
@@ -39,14 +49,17 @@ export default function Filterbar() {
             </Row>
             {/* MOBILE VIEW */}
             <Row className="d-flex d-lg-none" style={{ height: 70 }}>
-                <Col className="d-flex align-items-center justify-content-between ps-0 overflow-scroll">
-                    <Button className="input-base rounded-circle" >
+                <Col className="d-flex align-items-center ps-0 overflow-scroll">
+                    <Button className="input-base rounded-circle me-2" >
                         <SlMagnifier />
                     </Button>
-                    <Button className="input-base text-nowrap d-flex align-items-center" >
+                    <Button className="input-base text-nowrap d-flex align-items-center me-2" >
+                        Dyscyplina
+                    </Button>
+                    <Button className="input-base text-nowrap d-flex align-items-center me-2" >
                         Więcej filtrów
                     </Button>
-                    <Button className="input-base text-nowrap d-flex align-items-center" >
+                    <Button className="input-base text-nowrap d-flex align-items-center me-2" >
                         Więcej filtrów
                     </Button>
                 </Col>

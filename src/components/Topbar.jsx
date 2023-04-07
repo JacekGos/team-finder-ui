@@ -22,7 +22,7 @@ export default function Topbar() {
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey={2} href="#option" >
-                                <Button className="input-base">
+                                <Button className="input-base ">
                                     Zaloguj
                                 </Button>
                             </Nav.Link>
