@@ -8,7 +8,7 @@ export default function Topbar() {
         <Navbar collapseOnSelect expand="lg" variant="dark" className="position-absolute w-100 top-0 left-0">
             <Container fluid>
                 <Navbar.Brand className="mb-0" href="/">
-                    <p className="brand-title">Team-Finder.pl</p>
+                    <p className="brand-title">Team-Finder</p>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
