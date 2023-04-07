@@ -33,7 +33,7 @@ html, body {
   font-weight: 200;
 }
 
-.btn-topbar-signin {
+.btn-base {
   border: 1px solid #103861 !important;
   background-color: #0A1929 !important;
   color: #62ADF8 !important;
@@ -44,7 +44,7 @@ html, body {
   padding-right: 15px !important;
 }
 
-.btn-topbar-signin:hover {
+.btn-base:hover {
   border: 1px solid #23476b !important;
   background-color: #0E2237 !important;
   color: #f5f5f5 !important;
