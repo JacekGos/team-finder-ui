@@ -1,11 +1,14 @@
 import Topbar from "./components/Topbar";
 import Filterbar from "./components/Filterbar";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
     <>
       <Topbar />
-      <Filterbar />
+      <div style={{marginTop: 70}}>
+        <Filterbar />
+      </div>
     </>
   );
 }
