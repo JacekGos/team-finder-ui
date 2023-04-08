@@ -46,9 +46,7 @@ export default function Filterbar() {
                         <Button className="input-base rounded-circle" >
                             <h2><IoIosBicycle style={{ color: "white" }} /></h2>
                         </Button>
-                        <Button className="input-base text-nowrap d-flex d-lg-none">
-                            Dyscyplina
-                        </Button>
+
                     </Col>
                     <Col xs={7} sm={5} md={4} className="d-flex align-items-center justify-content-end">
                         <Button className="input-base text-nowrap d-flex align-items-center" >
@@ -64,18 +62,12 @@ export default function Filterbar() {
                             <SlMagnifier />
                         </Button>
                         <Button className="input-base text-nowrap d-flex align-items-center me-2" >
-                            Dyscyplina
-                        </Button>
-                        <Button className="input-base text-nowrap d-flex align-items-center me-2" >
-                            Więcej filtrów
-                        </Button>
-                        <Button className="input-base text-nowrap d-flex align-items-center me-2" >
                             Więcej filtrów
                         </Button>
                     </Col>
                 </Row>
             </Container>
-            <FilterModal show={show} fullscreen={isFullscreen} type={type} handleClose={setShow}/>
+            <FilterModal show={show} fullscreen={isFullscreen} type={type} handleClose={setShow} />
         </>
     )
 }
