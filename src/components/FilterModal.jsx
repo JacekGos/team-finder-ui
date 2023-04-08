@@ -17,13 +17,13 @@ export default function FilterModal(props) {
                     <TfiClose />
                 </Button>
             </Modal.Header >
-            <Modal.Body className="modal-base">
+            <Modal.Body className="modal-base p-0">
                 <Form>
-                    <Form.Group className="position-fixed d-flex align-items-center p-0" style={{ width: '90%', backgroundColor: '#0A1929'}}>
+                    <Form.Group className="position-fixed d-flex align-items-center w-100" style={{ padding: '8px 30px 1px 10px',  backgroundColor: '#0A1929'}}>
                         <Form.Control placeholder="lokalizacja" className="input-base input-search mb-3" />
                     </Form.Group>
-                    <Form.Group className="d-flex flex-column align-items-start gap-3">
-                        <div className="d-flex align-items-center" style={{marginTop: 60}}>
+                    <Form.Group className="d-flex flex-column align-items-start gap-3 ps-2">
+                        <div className="d-flex align-items-center" style={{marginTop: 70}}>
                             <Button className="input-base rounded-circle" >
                                 <h2><BiFootball style={{ color: "white" }} className="p-0 m-0" /></h2>
                             </Button>
