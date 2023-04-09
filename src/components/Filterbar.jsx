@@ -31,20 +31,20 @@ export default function Filterbar() {
                         </Form>
                     </Col>
                     <Col xs={3} sm={5} md={4} className="d-flex align-items-center justify-content-between">
-                        <Button className="input-base rounded-circle" >
-                            <h2><BiFootball style={{ color: "white" }} /></h2>
+                        <Button className="input-base rounded-circle" style={{aspectRatio: '1/1'}}>
+                            <BiFootball size={35} style={{ color: "white" }} />
                         </Button>
-                        <Button className="input-base rounded-circle" >
-                            <h2><FaVolleyballBall style={{ color: "white" }} /></h2>
+                        <Button className="input-base rounded-circle" style={{aspectRatio: '1/1'}}>
+                            <FaVolleyballBall size={35} style={{ color: "white" }} />
                         </Button>
-                        <Button className="input-base rounded-circle" >
-                            <h2><FaBasketballBall style={{ color: "white" }} /></h2>
+                        <Button className="input-base rounded-circle" style={{aspectRatio: '1/1'}}>
+                            <FaBasketballBall size={35} style={{ color: "white" }} />
                         </Button>
-                        <Button className="input-base rounded-circle" >
-                            <h2><BiTennisBall style={{ color: "white" }} /></h2>
+                        <Button className="input-base rounded-circle" style={{aspectRatio: '1/1'}}>
+                            <BiTennisBall size={35} style={{ color: "white" }} />
                         </Button>
-                        <Button className="input-base rounded-circle" >
-                            <h2><IoIosBicycle style={{ color: "white" }} /></h2>
+                        <Button className="input-base rounded-circle" style={{aspectRatio: '1/1'}}>
+                            <IoIosBicycle size={35} style={{ color: "white" }} />
                         </Button>
 
                     </Col>
