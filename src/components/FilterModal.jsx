@@ -121,27 +121,37 @@ export default function FilterModal(props) {
                                         </div>
                                     </div>
                                 </Form.Group>
-                                <Form.Group style={{ borderBottom: 'solid 1px #103861' }}>
+                                <Form.Group >
                                     <Form.Label>
                                         Data
                                     </Form.Label>
-                                    <div className="d-flex align-items-center">
-                                        <div className="d-flex flex-column align-items-center ps-3 pe-3">
+                                    <div className="d-flex align-items-center justify-content-between ps-3">
+                                        <div className="d-flex flex-column align-items-center ">
                                             <Form.Text >od</Form.Text>
-                                            <Form.Control type="date" defaultValue={'10.04.2023'} className="input-base input-search mb-3 w-100" />
+                                            <Form.Control type="date" defaultValue={new Date()} className="input-base input-search mb-3 w-100" />
                                         </div>
-                                        <div className="d-flex flex-column align-items-center ps-3 pe-3">
+                                        <div className="d-flex flex-column align-items-center pe-3">
                                             <Form.Text >do</Form.Text>
-                                            <Form.Control type="date"  className="input-base input-search mb-3 w-100" />
+                                            <Form.Control type="date" className="input-base input-search mb-3 w-100" />
                                         </div>
                                     </div>
                                 </Form.Group>
-                                <Container className="position-fixed position-absolute bottom-0 end-0 d-flex align-items-center justify-content-center w-100"
-                                    style={{ padding: '5px 0px 5px 10px', backgroundColor: '#0A1929', height: 70, borderTop: '1px solid #103861' }}>
-                                    <Button className="input-base ">
-                                        Pokaż wydażenia
-                                    </Button>
-                                </Container>
+                                {props.fullscreen
+                                    ?
+                                    <Container className="position-fixed position-absolute bottom-0 end-0 d-flex align-items-center justify-content-center w-100"
+                                        style={{ padding: '5px 0px 5px 10px', backgroundColor: '#0A1929', height: 70, borderTop: '1px solid #103861' }}>
+                                        <Button className="input-base ">
+                                            Pokaż wydażenia
+                                        </Button>
+                                    </Container>
+                                    :
+                                    <Container className="d-flex align-items-center justify-content-center w-100"
+                                        style={{ padding: '5px 0px 5px 10px', backgroundColor: '#0A1929', height: 70, borderTop: '1px solid #103861' }}>
+                                        <Button className="input-base ">
+                                            Pokaż wydażenia
+                                        </Button>
+                                    </Container>
+                                }
                             </Form>
                         </Modal.Body>
                     </>
