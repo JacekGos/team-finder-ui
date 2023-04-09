@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../filter.css';
+import '../styles/filter.css';
 import { Container, Row, Col, Form, Button, Modal } from "react-bootstrap";
 import { BsSliders2 } from "react-icons/bs";
 import { BiFootball, BiTennisBall } from "react-icons/bi";
