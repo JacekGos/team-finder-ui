@@ -1,4 +1,5 @@
 import React from "react";
+import '../filter.css';
 import { Modal, Button, Form, Container } from "react-bootstrap";
 import { TfiClose } from "react-icons/tfi";
 import { BiFootball, BiTennisBall } from "react-icons/bi";
