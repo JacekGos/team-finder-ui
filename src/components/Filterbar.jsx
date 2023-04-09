@@ -31,25 +31,25 @@ export default function Filterbar() {
                         </Form>
                     </Col>
                     <Col xs={3} sm={5} md={4} className="d-flex align-items-center justify-content-between">
-                        <Button className="input-base rounded-circle" style={{aspectRatio: '1/1'}}>
+                        <Button className="input-base rounded-circle" style={{ aspectRatio: '1/1' }}>
                             <BiFootball size={35} style={{ color: "white" }} />
                         </Button>
-                        <Button className="input-base rounded-circle" style={{aspectRatio: '1/1'}}>
+                        <Button className="input-base rounded-circle" style={{ aspectRatio: '1/1' }}>
                             <FaVolleyballBall size={35} style={{ color: "white" }} />
                         </Button>
-                        <Button className="input-base rounded-circle" style={{aspectRatio: '1/1'}}>
+                        <Button className="input-base rounded-circle" style={{ aspectRatio: '1/1' }}>
                             <FaBasketballBall size={35} style={{ color: "white" }} />
                         </Button>
-                        <Button className="input-base rounded-circle" style={{aspectRatio: '1/1'}}>
+                        <Button className="input-base rounded-circle" style={{ aspectRatio: '1/1' }}>
                             <BiTennisBall size={35} style={{ color: "white" }} />
                         </Button>
-                        <Button className="input-base rounded-circle" style={{aspectRatio: '1/1'}}>
+                        <Button className="input-base rounded-circle" style={{ aspectRatio: '1/1' }}>
                             <IoIosBicycle size={35} style={{ color: "white" }} />
                         </Button>
 
                     </Col>
                     <Col xs={7} sm={5} md={4} className="d-flex align-items-center justify-content-end">
-                        <Button className="input-base text-nowrap d-flex align-items-center" >
+                        <Button className="input-base text-nowrap d-flex align-items-center" onClick={() => handleModal(false, 'advanced')}>
                             <BsSliders2 className="me-1 d-none d-lg-flex" />
                             Więcej filtrów
                         </Button>
@@ -61,7 +61,7 @@ export default function Filterbar() {
                         <Button className="input-base rounded-circle me-2" onClick={() => handleModal(true, 'base')}>
                             <SlMagnifier />
                         </Button>
-                        <Button className="input-base text-nowrap d-flex align-items-center me-2" >
+                        <Button className="input-base text-nowrap d-flex align-items-center me-2" onClick={() => handleModal(true, 'advanced')}>
                             Więcej filtrów
                         </Button>
                     </Col>
