@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/team-finder-ui/static/css/main.1ddeb4e9.css",
+    "main.css": "/team-finder-ui/static/css/main.69a450b7.css",
     "main.js": "/team-finder-ui/static/js/main.d38de792.js",
     "index.html": "/team-finder-ui/index.html",
-    "main.1ddeb4e9.css.map": "/team-finder-ui/static/css/main.1ddeb4e9.css.map",
+    "main.69a450b7.css.map": "/team-finder-ui/static/css/main.69a450b7.css.map",
     "main.d38de792.js.map": "/team-finder-ui/static/js/main.d38de792.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ddeb4e9.css",
+    "static/css/main.69a450b7.css",
     "static/js/main.d38de792.js"
   ]
 }
