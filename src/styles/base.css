@@ -4,6 +4,7 @@ body {
   font-family: 'Nunito', sans-serif;
   background-color: #0A1929 !important;
   height: 100%;
+  overflow:hidden;
 }
 
 .navbar {

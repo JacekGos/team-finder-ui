@@ -89,9 +89,9 @@ export default function Events() {
                 </Tabs>
             </Container>
             {/* DESKTOP VIEW */}
-            <Container fluid className="p-0 d-none d-lg-inline">
+            <Container fluid className="p-0 d-none d-lg-block">
                 <Row className="d-none d-lg-flex">
-                    <Col className="overflow-auto">
+                    <Col >
                         {events.map((data, key) => {
                             return <EventTab key={key} name={data.name} price={data.price} date={data.date} location={data.location} />
                         })}

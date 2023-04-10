@@ -23,7 +23,7 @@ export default function Filterbar() {
     return (
         <>
             <Container fluid>
-                <Row className="d-none d-lg-flex position-fixed" style={{ height: 90, width: '99%', backgroundColor: '#0A1929'}}>
+                <Row className="d-none d-lg-flex" style={{ height: 90, width: '100%', backgroundColor: '#0A1929'}}>
                     <Col xs={2} sm={2} md={4} className="d-flex align-items-center justify-content-start ps-0" >
                         <Form>
                             <Form.Group>
@@ -67,7 +67,7 @@ export default function Filterbar() {
                         </Button>
                     </Col>
                 </Row>
-                <div style={{marginTop: 70}}></div>
+                {/* <div style={{marginTop: 70}}></div> */}
             </Container>
             <FilterModal show={show} fullscreen={isFullscreen} type={type} handleClose={setShow} />
         </>

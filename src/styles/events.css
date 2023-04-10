@@ -15,6 +15,10 @@
     color: #f5f5f5 !important;
 }   
 
+.events {
+    /* overflow-y: auto !important; */
+}
+
 /* .tabs > .nav-item{
     margin-top: 70px;
 }   */
