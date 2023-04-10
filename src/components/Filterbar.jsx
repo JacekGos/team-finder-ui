@@ -23,7 +23,7 @@ export default function Filterbar() {
     return (
         <>
             <Container fluid>
-                <Row className="d-none d-lg-flex" style={{ height: 90 }}>
+                <Row className="d-none d-lg-flex position-fixed" style={{ height: 90, width: '99%', backgroundColor: '#0A1929'}}>
                     <Col xs={2} sm={2} md={4} className="d-flex align-items-center justify-content-start ps-0" >
                         <Form>
                             <Form.Group>
@@ -57,7 +57,7 @@ export default function Filterbar() {
                     </Col>
                 </Row>
                 {/* MOBILE VIEW */}
-                <Row className="d-flex d-lg-none" style={{ height: 70 }}>
+                <Row className="d-flex d-lg-none position-fixed w-100" style={{ height: 70, padding: '8px 30px 1px 10px', backgroundColor: '#0A1929'}}>
                     <Col className="d-flex align-items-center ps-0 overflow-scroll">
                         <Button className="input-base rounded-circle me-2" onClick={() => handleModal(true, 'base')}>
                             <SlMagnifier />
@@ -67,6 +67,7 @@ export default function Filterbar() {
                         </Button>
                     </Col>
                 </Row>
+                <div style={{marginTop: 70}}></div>
             </Container>
             <FilterModal show={show} fullscreen={isFullscreen} type={type} handleClose={setShow} />
         </>

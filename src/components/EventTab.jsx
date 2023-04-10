@@ -8,7 +8,7 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 export default function EventTab(props) {
 
     return (
-        <Container fluid className="mt-1" style={{ height: 80, backgroundColor: '#0E2237', borderRadius: 5 }}>
+        <Container fluid className="mt-1" style={{ height: 80, backgroundColor: '#0E2237', borderRadius: 5}}>
             <Row className="h-100 p-1">
                 <Col xs={3} className="d-flex align-items-center justify-content-center rounded" style={{ backgroundColor: '#0A1929' }}>
                     <BiFootball size={45} style={{ color: "white" }} />

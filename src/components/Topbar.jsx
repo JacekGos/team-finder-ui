@@ -5,7 +5,7 @@ import { Container, Navbar, Nav, Form, Button } from "react-bootstrap";
 export default function Topbar() {
 
     return (
-        <Navbar collapseOnSelect expand="lg" variant="dark" className="position-absolute w-100 top-0 left-0">
+        <Navbar collapseOnSelect expand="lg" variant="dark" className="position-fixed position-absolute w-100 top-0 left-0">
             <Container fluid>
                 <Navbar.Brand className="mb-0" href="/">
                     <p className="brand-title">Team-Finder</p>

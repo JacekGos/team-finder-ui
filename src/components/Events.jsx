@@ -75,27 +75,31 @@ export default function Events() {
     ]
 
     return (
-        <Container fluid className="p-0 d-inline d-lg-none">
+        <>
             {/* MOBILE VIEW */}
-            <Tabs className="tabs ">
-                <Tab eventKey="events" title="Wydażenia">
-                    {events.map((data, key) => {
-                        return <EventTab key={key} name={data.name} price={data.price} date={data.date} location={data.location}/>
-                    })}
-                </Tab>
-                <Tab eventKey="map" title="Mapa">
-                </Tab>
-            </Tabs>
-            
+            <Container fluid className="p-0 d-inline d-lg-none" >
+                <Tabs className="tabs">
+                    <Tab eventKey="events" title="Wydarzenia" className="">
+                        {events.map((data, key) => {
+                            return <EventTab key={key} name={data.name} price={data.price} date={data.date} location={data.location} />
+                        })}
+                    </Tab>
+                    <Tab eventKey="map" title="Mapa" >
+                    </Tab>
+                </Tabs>
+            </Container>
             {/* DESKTOP VIEW */}
-            <Row className="d-none d-lg-flex">
-                <Col>
-                    COL 1
-                </Col>
-                <Col>
-                    COL 2
-                </Col>
-            </Row>
-        </Container>
+            <Container fluid className="p-0 d-none d-lg-inline">
+                <Row className="d-none d-lg-flex">
+                    <Col className="overflow-auto">
+                        {events.map((data, key) => {
+                            return <EventTab key={key} name={data.name} price={data.price} date={data.date} location={data.location} />
+                        })}
+                    </Col>
+                    <Col>
+                    </Col>
+                </Row>
+            </Container>
+        </>
     )
 }
