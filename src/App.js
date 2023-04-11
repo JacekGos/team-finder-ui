@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Topbar />
-      <Container fluid style={{marginTop: 70}}>
+      <Container fluid style={{marginTop: 70, maxHeight: '100%'}}>
         <Filterbar />
         <Events />
       </Container>

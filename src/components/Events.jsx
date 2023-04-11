@@ -77,9 +77,9 @@ export default function Events() {
     return (
         <>
             {/* MOBILE VIEW */}
-            <Container fluid className="p-0 d-inline d-lg-none" >
-                <Tabs className="tabs">
-                    <Tab eventKey="events" title="Wydarzenia" className="">
+            <Container fluid className="p-0 d-inline d-lg-none " >
+                <Tabs className="tabs " style={{marginTop: 150}}>
+                    <Tab eventKey="events" title="Wydarzenia" style={{overflowY: 'scroll', maxHeight: '480px'}}>
                         {events.map((data, key) => {
                             return <EventTab key={key} name={data.name} price={data.price} date={data.date} location={data.location} />
                         })}
@@ -91,7 +91,7 @@ export default function Events() {
             {/* DESKTOP VIEW */}
             <Container fluid className="p-0 d-none d-lg-block">
                 <Row className="d-none d-lg-flex">
-                    <Col >
+                    <Col style={{overflowY: 'scroll', maxHeight: '700px'}}>
                         {events.map((data, key) => {
                             return <EventTab key={key} name={data.name} price={data.price} date={data.date} location={data.location} />
                         })}
