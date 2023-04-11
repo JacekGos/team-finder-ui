@@ -14,7 +14,14 @@ export default function Events() {
             price: 10,
             date: '09.04 14:00',
             location: 'Kielce, Krakowska 15',
-            discipline: 'football'
+            discipline: 'fotball'
+        },
+        {
+            name: 'Gierka',
+            price: 10,
+            date: '09.04 14:00',
+            location: 'Kielce, Krakowska 15',
+            discipline: 'volleyball'
         },
         {
             name: 'Gierka',
@@ -28,7 +35,7 @@ export default function Events() {
             price: 10,
             date: '09.04 14:00',
             location: 'Kielce, Krakowska 15',
-            discipline: 'football'
+            discipline: 'basketball'
         },
         {
             name: 'Gierka',
@@ -42,7 +49,14 @@ export default function Events() {
             price: 10,
             date: '09.04 14:00',
             location: 'Kielce, Krakowska 15',
-            discipline: 'football'
+            discipline: 'tennis'
+        },
+        {
+            name: 'Gierka',
+            price: 10,
+            date: '09.04 14:00',
+            location: 'Kielce, Krakowska 15',
+            discipline: 'bicycle'
         },
         {
             name: 'Gierka',
@@ -56,7 +70,7 @@ export default function Events() {
             price: 10,
             date: '09.04 14:00',
             location: 'Kielce, Krakowska 15',
-            discipline: 'football'
+            discipline: 'basketball'
         },
         {
             name: 'Gierka',
@@ -70,35 +84,7 @@ export default function Events() {
             price: 10,
             date: '09.04 14:00',
             location: 'Kielce, Krakowska 15',
-            discipline: 'football'
-        },
-        {
-            name: 'Gierka',
-            price: 10,
-            date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'football'
-        },
-        {
-            name: 'Gierka',
-            price: 10,
-            date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'football'
-        },
-        {
-            name: 'Gierka',
-            price: 10,
-            date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'football'
-        },
-        {
-            name: 'Gierka',
-            price: 10,
-            date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'football'
+            discipline: 'tennis'
         },
     ]
 
@@ -106,8 +92,8 @@ export default function Events() {
         <>
             {/* MOBILE VIEW */}
             <Container fluid className="p-0 d-inline d-lg-none " >
-                <Tabs className="tabs " style={{marginTop: 150}}>
-                    <Tab eventKey="events" title="Wydarzenia" style={{overflowY: 'scroll', maxHeight: '70vh'}}>
+                <Tabs className="tabs " style={{ marginTop: 150 }}>
+                    <Tab eventKey="events" title="Wydarzenia" style={{ overflowY: 'scroll', maxHeight: '70vh' }}>
                         {events.map((data, key) => {
                             return <EventTab key={key} name={data.name} price={data.price} date={data.date} location={data.location} discipline={data.discipline} />
                         })}
@@ -119,9 +105,9 @@ export default function Events() {
             {/* DESKTOP VIEW */}
             <Container fluid className="p-0 d-none d-lg-block">
                 <Row className="d-none d-lg-flex">
-                    <Col style={{overflowY: 'scroll', maxHeight: '80vh'}}>
+                    <Col style={{ overflowY: 'scroll', maxHeight: '80vh' }}>
                         {events.map((data, key) => {
-                            return <EventTab key={key} name={data.name} price={data.price} date={data.date} location={data.location} />
+                            return <EventTab key={key} name={data.name} price={data.price} date={data.date} location={data.location} discipline={data.discipline} />
                         })}
                     </Col>
                     <Col>

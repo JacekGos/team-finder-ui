@@ -9,11 +9,10 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 
 export default function EventTab(props) {
 
-    function getIcon() {
-        switch (props.discipline) {
-            case 'football':
-                console.log('football');
-                return (<BiFootball size={45} style={{ color: "white" }} />);
+    let icon = (discipline) => {
+        switch (discipline) {
+            case "football":
+                return <BiFootball size={45} style={{ color: "white" }} />;
             case 'volleyball':
                 return <FaVolleyballBall size={45} style={{ color: "white" }} />;
             case 'basketball':
@@ -21,9 +20,9 @@ export default function EventTab(props) {
             case 'tennis':
                 return <BiTennisBall size={45} style={{ color: "white" }} />;
             case 'bicycle':
-                return <IoIosBicycle size={45} style={{ color: "white" }} />;
+            return <IoIosBicycle size={45} style={{ color: "white" }} />;
             default:
-                return <></>
+                return <FaBasketballBall size={45} style={{ color: "white" }} />;
         }
     }
 
@@ -31,8 +30,7 @@ export default function EventTab(props) {
         <Container fluid className="mt-1" style={{ height: 80, backgroundColor: '#0E2237', borderRadius: 5 }}>
             <Row className="h-100 p-1">
                 <Col xs={3} className="d-flex align-items-center justify-content-center rounded" style={{ backgroundColor: '#0A1929' }}>
-                    {/* <BiFootball size={45} style={{ color: "white" }} /> */}
-                    {getIcon()}
+                    {icon(props.discipline)}
                 </Col>
                 <Col xs={9} style={{ color: 'white' }}>
                     <Row className="h-50">
