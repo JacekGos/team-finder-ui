@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import '../styles/filter.css';
-import { Container, Row, Col, Form, Button, Modal } from "react-bootstrap";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { BsSliders2 } from "react-icons/bs";
 import { BiFootball, BiTennisBall } from "react-icons/bi";
 import { FaVolleyballBall, FaBasketballBall } from "react-icons/fa";
