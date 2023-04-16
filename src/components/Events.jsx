@@ -1,92 +1,29 @@
-import React from "react";
+import React, { useCallback, useMemo, useRef } from "react";
 import '../styles/events.css';
 import { Container, Row, Col, Tabs, Tab } from "react-bootstrap";
 import EventTab from "./EventTab";
-import { BiFootball, BiTennisBall } from "react-icons/bi";
-import { FaVolleyballBall, FaBasketballBall } from "react-icons/fa";
-import { IoIosBicycle } from "react-icons/io";
+import events from "../tmpData/events";
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 export default function Events() {
 
-    let events = [
-        {
-            name: 'Gierka',
-            price: 10,
-            date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'fotball'
-        },
-        {
-            name: 'Gierka',
-            price: 10,
-            date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'volleyball'
-        },
-        {
-            name: 'Gierka',
-            price: 10,
-            date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'football'
-        },
-        {
-            name: 'Gierka',
-            price: 10,
-            date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'basketball'
-        },
-        {
-            name: 'Gierka',
-            price: 10,
-            date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'football'
-        },
-        {
-            name: 'Gierka',
-            price: 10,
-            date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'tennis'
-        },
-        {
-            name: 'Gierka',
-            price: 10,
-            date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'bicycle'
-        },
-        {
-            name: 'Gierka',
-            price: 10,
-            date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'football'
-        },
-        {
-            name: 'Gierka',
-            price: 10,
-            date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'basketball'
-        },
-        {
-            name: 'Gierka',
-            price: 10,
-            date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'football'
-        },
-        {
-            name: 'Gierka',
-            price: 10,
-            date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'tennis'
-        },
-    ]
+    const mapRef = useRef();
+    const center = useMemo(() => ({ lat: 52.23618739317693, lng: 21.013119403942184 }), []);
+    const options = useMemo(() => ({
+        disableDefaultUI: true,
+        clickableIcons: false
+    }), [])
+    const zoom = 10;
+
+    const onLoad = useCallback((map) => (mapRef.current = map), []);
+
+    const { isLoaded } = useJsApiLoader({
+        id: 'google-map-script',
+        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+        version: "weekly"
+    });
+
+
 
     return (
         <>
@@ -111,6 +48,15 @@ export default function Events() {
                         })}
                     </Col>
                     <Col>
+                        {!isLoaded ?
+                            <div style={{ color: 'white' }}>Ładowanie mapy...</div>
+                            : <GoogleMap 
+                                zoom={zoom} 
+                                center={center} 
+                                options={options} 
+                                onLoad={onLoad}
+                                mapContainerClassName="map-container"></GoogleMap>
+                        }
                     </Col>
                 </Row>
             </Container>
