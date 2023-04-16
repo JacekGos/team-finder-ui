@@ -8,12 +8,13 @@ import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 export default function Events() {
 
     const mapRef = useRef();
-    const center = useMemo(() => ({ lat: 52.23618739317693, lng: 21.013119403942184 }), []);
+    const center = useMemo(() => ({ lat: 52.52245662560353, lng: 19.341419774433 }), []);
     const options = useMemo(() => ({
+        mapId: "c3f5f9d1cc7c834c",
         disableDefaultUI: true,
         clickableIcons: false
-    }), [])
-    const zoom = 10;
+    }), []);
+    const zoom = 7;
 
     const onLoad = useCallback((map) => (mapRef.current = map), []);
 
@@ -36,6 +37,15 @@ export default function Events() {
                         })}
                     </Tab>
                     <Tab eventKey="map" title="Mapa" >
+                        {!isLoaded ?
+                            <div style={{ color: 'white' }}>Ładowanie mapy...</div>
+                            : <GoogleMap
+                                zoom={zoom}
+                                center={center}
+                                options={options}
+                                onLoad={onLoad}
+                                mapContainerClassName="map-container"></GoogleMap>
+                        }
                     </Tab>
                 </Tabs>
             </Container>
@@ -50,10 +60,10 @@ export default function Events() {
                     <Col>
                         {!isLoaded ?
                             <div style={{ color: 'white' }}>Ładowanie mapy...</div>
-                            : <GoogleMap 
-                                zoom={zoom} 
-                                center={center} 
-                                options={options} 
+                            : <GoogleMap
+                                zoom={zoom}
+                                center={center}
+                                options={options}
                                 onLoad={onLoad}
                                 mapContainerClassName="map-container"></GoogleMap>
                         }
