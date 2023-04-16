@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/team-finder-ui/static/css/main.69a450b7.css",
-    "main.js": "/team-finder-ui/static/js/main.95258b70.js",
+    "main.css": "/team-finder-ui/static/css/main.a4fc52b5.css",
+    "main.js": "/team-finder-ui/static/js/main.b9cc05f2.js",
+    "static/media/football.svg": "/team-finder-ui/static/media/football.5ea47c63050254c855c749d593bc8863.svg",
     "index.html": "/team-finder-ui/index.html",
-    "main.69a450b7.css.map": "/team-finder-ui/static/css/main.69a450b7.css.map",
-    "main.95258b70.js.map": "/team-finder-ui/static/js/main.95258b70.js.map"
+    "main.a4fc52b5.css.map": "/team-finder-ui/static/css/main.a4fc52b5.css.map",
+    "main.b9cc05f2.js.map": "/team-finder-ui/static/js/main.b9cc05f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.69a450b7.css",
-    "static/js/main.95258b70.js"
+    "static/css/main.a4fc52b5.css",
+    "static/js/main.b9cc05f2.js"
   ]
 }
