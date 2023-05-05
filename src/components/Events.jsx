@@ -27,7 +27,8 @@ export default function Events() {
     });
 
     const eventsData = useMemo(() => (events.map((data, key) => {
-        return <EventTab key={key} name={data.name} price={data.price} date={data.date} address={data.address} discipline={data.discipline} />
+        return <EventTab key={key} index={key} name={data.name} price={data.price} date={data.date} address={data.address} discipline={data.discipline} handleClick={() => showInfo(key)}
+        />
     })), []);
 
     function getIcon(discipline) {
@@ -40,8 +41,7 @@ export default function Events() {
         return foundIcon?.icon;
     }
 
-    function showInfo(position, index) {
-        console.log('postion: ' + position);
+    function showInfo(index) {
         console.log(' on index: ' + index);
     }
 
@@ -96,8 +96,8 @@ export default function Events() {
                                     <MarkerClusterer gridSize={30}>
                                         {(clusterer) =>
                                             events.map((event, index) => (
-                                                <Marker key={index} position={event.location} clusterer={clusterer} icon={getIcon(event.discipline)} 
-                                                    onClick={() => showInfo(event.location, index)}
+                                                <Marker key={index} position={event.location} clusterer={clusterer} icon={getIcon(event.discipline)}
+                                                    onClick={() => showInfo(index)}
                                                 />
                                             ))
                                         }

@@ -27,7 +27,7 @@ export default function EventTab(props) {
     }
 
     return (
-        <Container fluid className="mt-1" style={{ height: 80, backgroundColor: '#0E2237', borderRadius: 5 }}>
+        <Container fluid className="mt-1" style={{ height: 80, backgroundColor: '#0E2237', borderRadius: 5, cursor: 'pointer' }} onClick={() => props.handleClick(props.index)}>
             <Row className="h-100 p-1">
                 <Col xs={3} className="d-flex align-items-center justify-content-center rounded" style={{ backgroundColor: '#0A1929' }}>
                     {icon(props.discipline)}
