@@ -48,7 +48,7 @@ export default function EventTab(props) {
                             {props.date}
                         </Col>
                         <Col className="d-flex align-items-center justify-content-end" style={{ fontSize: 13 }}>
-                            {props.location}
+                            {props.address}
                             <HiOutlineLocationMarker size={15} style={{ color: 'white', marginLeft: 3 }} />
                         </Col>
                     </Row>

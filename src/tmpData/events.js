@@ -4,77 +4,127 @@ export default
             name: 'Gierka',
             price: 10,
             date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'fotball'
+            address: 'Kielce, Krakowska 15',
+            discipline: 'football',
+            location: {lat: 52.1976, lng: 20.8814},
         },
         {
             name: 'Gierka',
             price: 10,
             date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'volleyball'
+            address: 'Kielce, Krakowska 15',
+            discipline: 'volleyball',
+            location: {lat: 52.1776, lng: 20.9814}
         },
         {
             name: 'Gierka',
             price: 10,
             date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
+            address: 'Kielce, Krakowska 15',
+            discipline: 'football',
+            location: {lat: 52.5776, lng: 20.3814},
+        },
+        {
+            name: 'Gierka',
+            price: 10,
+            date: '09.04 14:00',
+            address: 'Kielce, Krakowska 15',
+            discipline: 'basketball',
+            location: {lat: 52.5776, lng: 20.8814},
+        },
+        {
+            name: 'Gierka',
+            price: 10,
+            date: '09.04 14:00',
+            address: 'Kielce, Krakowska 15',
+            discipline: 'football',
+            location: {lat: 50.8823, lng: 20.5845},
+        },
+        {
+            name: 'Gierka',
+            price: 10,
+            date: '09.04 14:00',
+            address: 'Kielce, Krakowska 15',
+            discipline: 'tennis',
+            location: {lat: 50.6823, lng: 20.0845},
+        },
+        {
+            name: 'Gierka',
+            price: 10,
+            date: '09.04 14:00',
+            address: 'Kielce, Krakowska 15',
+            discipline: 'bicycle',
+            location: {lat: 51.0823, lng: 20.5845},
+        },
+        {
+            name: 'Gierka',
+            price: 10,
+            date: '09.04 14:00',
+            address: 'Kielce, Krakowska 15',
             discipline: 'football'
         },
         {
             name: 'Gierka',
             price: 10,
             date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'basketball'
+            address: 'Kielce, Krakowska 15',
+            discipline: 'basketball',
+            location: {lat: 50.7664, lng: 20.5498},
         },
         {
             name: 'Gierka',
             price: 10,
             date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'football'
+            address: 'Kielce, Krakowska 15',
+            discipline: 'football',
+            location: {lat: 50.8664, lng: 20.4498},
         },
         {
             name: 'Gierka',
             price: 10,
             date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'tennis'
+            address: 'Kielce, Krakowska 15',
+            discipline: 'tennis',
+            location: {lat: 52.3976, lng: 20.6814},
         },
         {
             name: 'Gierka',
             price: 10,
             date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'bicycle'
+            address: 'Kielce, Krakowska 15',
+            discipline: 'bicycle',
+            location: {lat: 52.3976, lng: 16.6229},
         },
         {
             name: 'Gierka',
             price: 10,
             date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'football'
+            address: 'Kielce, Krakowska 15',
+            discipline: 'football',
+            location: {lat: 52.4116, lng: 17.0229},
         },
         {
             name: 'Gierka',
             price: 10,
             date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'basketball'
+            address: 'Kielce, Krakowska 15',
+            discipline: 'basketball',
+            location: {lat: 52.4176, lng: 17.1229},
         },
         {
             name: 'Gierka',
             price: 10,
             date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'football'
+            address: 'Kielce, Krakowska 15',
+            discipline: 'football',
+            location: {lat: 52.3516, lng: 16.8229},
         },
         {
             name: 'Gierka',
             price: 10,
             date: '09.04 14:00',
-            location: 'Kielce, Krakowska 15',
-            discipline: 'tennis'
+            address: 'Kielce, Krakowska 15',
+            discipline: 'tennis',
+            location: {lat: 52.4016, lng: 16.9229},
         },
     ]
