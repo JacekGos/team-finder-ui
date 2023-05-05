@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/team-finder-ui/static/css/main.f941bb62.css",
-    "main.js": "/team-finder-ui/static/js/main.736bf5b1.js",
-    "static/media/football.svg": "/team-finder-ui/static/media/football.5ea47c63050254c855c749d593bc8863.svg",
+    "main.js": "/team-finder-ui/static/js/main.777118f4.js",
     "index.html": "/team-finder-ui/index.html"
   },
   "entrypoints": [
     "static/css/main.f941bb62.css",
-    "static/js/main.736bf5b1.js"
+    "static/js/main.777118f4.js"
   ]
 }
