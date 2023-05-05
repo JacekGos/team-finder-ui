@@ -1,11 +1,11 @@
-import React, { useCallback, useMemo, useRef } from "react";
+import React, { useCallback, useMemo, useRef, useState } from "react";
 import '../styles/events.css';
 import MediaQuery from 'react-responsive'
 import { Container, Row, Col, Tabs, Tab } from "react-bootstrap";
 import EventTab from "./EventTab";
 import events from "../tmpData/events";
 import icons from "../icons/icons"
-import { GoogleMap, Marker, useJsApiLoader, MarkerClusterer } from '@react-google-maps/api';
+import { GoogleMap, Marker, useJsApiLoader, MarkerClusterer, InfoWindow } from '@react-google-maps/api';
 
 export default function Events() {
 
@@ -34,11 +34,15 @@ export default function Events() {
         let foundIcon;
         icons.find((icon) => {
             if (icon.type === discipline) {
-                console.log("icon: ", icon);
                 foundIcon = icon;
             }
         })
         return foundIcon?.icon;
+    }
+
+    function showInfo(position, index) {
+        console.log('postion: ' + position);
+        console.log(' on index: ' + index);
     }
 
     return (
@@ -62,7 +66,8 @@ export default function Events() {
                                     <MarkerClusterer gridSize={30}>
                                         {(clusterer) =>
                                             events.map((event, index) => (
-                                                <Marker key={index} position={event.location} clusterer={clusterer} icon={getIcon(event.discipline)} />
+                                                <Marker key={index} position={event.location} clusterer={clusterer} icon={getIcon(event.discipline)}
+                                                />
                                             ))
                                         }
                                     </MarkerClusterer>
@@ -71,7 +76,7 @@ export default function Events() {
                     </Tabs>
                 </Container>
             </MediaQuery>
-
+            2
             {/* BIG SCREEN VIEW */}
             <MediaQuery minWidth={992}>
                 <Container fluid className="p-0 d-none d-lg-block">
@@ -91,7 +96,9 @@ export default function Events() {
                                     <MarkerClusterer gridSize={30}>
                                         {(clusterer) =>
                                             events.map((event, index) => (
-                                                <Marker key={index} position={event.location} clusterer={clusterer} icon={getIcon(event.discipline)} />
+                                                <Marker key={index} position={event.location} clusterer={clusterer} icon={getIcon(event.discipline)} 
+                                                    onClick={() => showInfo(event.location, index)}
+                                                />
                                             ))
                                         }
                                     </MarkerClusterer>
