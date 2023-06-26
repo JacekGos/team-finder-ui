@@ -31,6 +31,11 @@ Map generation with locations and markers is done by using Google Maps JavaScrip
 
 <h3 align="left">Screenshots:</h3>
 
-![image](https://github.com/JacekGos/team-finder-ui/assets/46130249/bc1f9004-8a7c-4b19-834d-edee8d7b4bee)
+![image](https://github.com/JacekGos/team-finder-ui/assets/46130249/a24f13d6-6439-4e1d-bacf-9a60fbca2c4e)
+
+![image](https://github.com/JacekGos/team-finder-ui/assets/46130249/052018ed-5707-4fd6-a428-0458b843c9e4)
+
+
+
 
 
