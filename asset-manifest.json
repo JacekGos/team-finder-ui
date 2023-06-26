@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/team-finder-ui/static/css/main.f941bb62.css",
-    "main.js": "/team-finder-ui/static/js/main.ae57e3f6.js",
+    "main.js": "/team-finder-ui/static/js/main.dcdc0492.js",
     "index.html": "/team-finder-ui/index.html"
   },
   "entrypoints": [
     "static/css/main.f941bb62.css",
-    "static/js/main.ae57e3f6.js"
+    "static/js/main.dcdc0492.js"
   ]
 }
